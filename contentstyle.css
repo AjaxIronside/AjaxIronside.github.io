@@ -25,6 +25,8 @@ body{
     background-image: url('src/img/logo.png');
     background-repeat: no-repeat;
     margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1px;
     width: 15px;
     height: 15px;
 }
@@ -33,13 +35,15 @@ h2 {
     font-weight:normal;
     font-size:15px;
 }
-a {
+.titlebar a {
+    float: left;
     font-family: 'Chicago Plain';
     font-weight: normal;
     font-size:12px;
     color: black;
     text-decoration: none;
-    padding: 0px 5px
+    margin-right: 4px;
+    margin-top: 3px;
 }
 .headerlinks{
     float: left;
@@ -50,17 +54,17 @@ a {
     font-weight: normal;
     color: black;
     font-size:12px;
-    padding: 2px 5px;
+    padding: 2px 7px;
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     outline: none;
+    margin-right: none;
 }
 
 .dropdown{
-    position: absolute;
-    display: inline-block;
+    float: left;
 }
 
 .dropdowncontent{
@@ -68,14 +72,17 @@ a {
     position: absolute;
     background-color: white;
     min-width: 200px;
-    padding-top: 20px;
+    margin-top: 20px;
 }
+
 .dropdowncontent a{
+    float: none;
     color: black;
     padding: 2px 5px;
     text-decoration: none;
     display: block;
 }
+
 .dropdowncontent a:hover {
     background-color: black;
     color: white;
@@ -84,7 +91,48 @@ a {
 .dropdown:hover .dropdowncontent{
     display: block;
 }
+
 .dropdown:hover .dropdowntext{
     background-color: black;
     color: white;
+}
+
+.container{
+    text-align: center;
+}
+
+.divider {
+    height: 7%;
+}
+
+.windowtitle {
+    text-align: center;
+    background-color: blue;
+    height: 17px;
+    width: 70%;
+    margin: auto;
+    border: 1px outset black;
+    background: url(src/img/windowborderleft.png), url(src/img/windowborderright.png), 
+    url(src/img/windowbordercenter.png), #fff;
+    background-position: 0 bottom, 99.95% bottom; 50% bottom;
+    background-repeat: no-repeat;
+    bottom: 0;
+}
+.windowtitlename{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #efefef;
+    font-family: 'Chicago Plain';
+    font-weight: normal;
+    color: black;
+    font-size:12px;
+}
+.contentarea {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border: 1px outset black;
+    
+    
 }
