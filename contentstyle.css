@@ -22,7 +22,7 @@ body{
 
 .titlebar{ 
     background-color: white;
-    border: outset 1px black;
+    border: solid 1px black;
     width: 100%;
     height: 20px;
     
@@ -73,7 +73,7 @@ h2 {
 }
 .dropdowntext{
     float: left;
-    height: 20px;
+    height: 21px;
     font-family: 'Chicago Plain';
     font-weight: normal;
     color: black;
@@ -84,7 +84,7 @@ h2 {
     border: none;
     cursor: pointer;
     outline: none;
-    margin-top: 1px;
+    margin-top: 0px;
     margin-right: 4px;
 }
 
@@ -104,7 +104,7 @@ h2 {
 .dropdowncontent a{
     float: none;
     color: black;
-    padding: 2px 5px;
+    padding: 0px 2px;
     text-decoration: none;
     display: block;
 }

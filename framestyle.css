@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Virtue";
+  src: local('src/virtue.ttf');
+}
+
+.textbox{
+    font-family: 'Virtue';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5px;
+}
+.boxleft {
+    float: left;
+    width: 30%;
+    height: 146px;
+    text-align: center;
+    border: solid grey;
+    border-right: none;
+    background-color: lightgrey;
+}
+.boxmid {
+    float: left;
+    width: 33%;
+    height: 146px;
+    text-align: center;
+    border: solid grey;
+    background-color: lightgrey;
+}
+.boxright {
+    float: left;
+    width: 30%;
+    height: 146px;
+    text-align: center;
+    border: solid grey;
+    border-left: none;
+    background-color: lightgrey;
+}
+.container {
+    margin: auto;
+    width: 380px;
+}
+.imgcontainer{
+    padding: 15px;
+    text-align: center;
+}
+a {
+    font-family: 'Virtue';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 75%;
+    text-decoration: none;
+    color: blue;
+}
+.largecontainer{
+    width: 100%;
+}
