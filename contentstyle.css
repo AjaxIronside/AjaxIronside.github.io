@@ -1,9 +1,16 @@
 @font-face {
+  font-family: "Virtue";
+  src: local('src/virtue.ttf');
+}
+
+@font-face {
 font-family: 'Chicago Plain';
 font-style: normal;
 font-weight: normal;
 src: local('Chicago Plain'), url('src/Chicago.woff') format('woff');
 }
+
+
 
 
 body{
@@ -30,6 +37,22 @@ body{
     width: 15px;
     height: 15px;
 }
+.facebook{
+    float: right;
+    background-image: url('src/img/facebook.png');
+    background-repeat: no-repeat;
+    margin-left: 99%;
+    width: 14px;
+    height: 14px;
+}
+.twitter{
+        float: right;
+    background-image: url('src/img/twitter.png');
+    background-repeat: no-repeat;
+    margin-left: 99%;
+    width: 14px;
+    height: 14px;
+}
 h2 {
     font-family: 'Chicago Plain';
     font-weight:normal;
@@ -39,11 +62,11 @@ h2 {
     float: left;
     font-family: 'Chicago Plain';
     font-weight: normal;
-    font-size:12px;
+    font-size:80%;
     color: black;
     text-decoration: none;
     margin-right: 4px;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 .headerlinks{
     float: left;
@@ -53,8 +76,8 @@ h2 {
     font-family: 'Chicago Plain';
     font-weight: normal;
     color: black;
-    font-size:12px;
-    padding: 2px 7px;
+    font-size:80%;
+    display: inline-block;
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
@@ -71,8 +94,9 @@ h2 {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 200px;
+    min-width: 150px;
     margin-top: 20px;
+    border: 1px outset black;
 }
 
 .dropdowncontent a{
@@ -109,7 +133,7 @@ h2 {
     text-align: center;
     background-color: blue;
     height: 17px;
-    width: 70%;
+    width: 80%;
     margin: auto;
     border: 1px outset black;
     background: url(src/img/windowborderleft.png), url(src/img/windowborderright.png), 
@@ -129,10 +153,43 @@ h2 {
     font-size:12px;
 }
 .contentarea {
-    width: 70%;
+    width: 80%;
+    height: 80%;
     margin: auto;
     background-color: white;
     border: 1px outset black;
+    margin-bottom: 80px;
     
-    
+}
+.currentTime {
+    float: right;
+    padding-right: 10px;
+    padding-top: 3px;
+    font-family: 'Chicago Plain';
+    font-weight: normal;
+    color: black;
+    font-size:12px;
+}
+
+.socialshare {
+    float: right;
+    margin-right: 3%
+}
+
+.bottompanel {
+    position: fixed;
+    bottom: 0px;
+    height: 24px;
+    width: 100%;
+    background: url(src/img/bottompanel.png);
+    background-repeat: no-repeat;
+}
+.textbox {
+    margin: 30px;
+}
+.p {
+    font-family: 'virtue';
+    font-weight: normal;
+    font-size:80%;
+    color: black;
 }

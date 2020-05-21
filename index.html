@@ -1,6 +1,33 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="contentstyle.css">
+        
+        <script>
+            window.onload = function() {
+  clock();  
+    function clock() {
+    var now = new Date();
+    var TwentyFourHour = now.getHours();
+    var hour = now.getHours();
+    var min = now.getMinutes();
+    var mid = ' PM';
+    if (min < 10) {
+      min = "0" + min;
+    }
+    if (hour > 12) {
+      hour = hour - 12;
+    }    
+    if(hour==0){ 
+      hour=12;
+    }
+    if(TwentyFourHour < 12) {
+       mid = ' AM';
+    }     
+  document.getElementById('currentTime').innerHTML =     hour+':'+min +mid ;
+    setTimeout(clock, 1000);
+    }
+}
+        </script>
     </head>
     <body>
         <!-- Title Bar Area -->
@@ -19,6 +46,23 @@
                 </div>
             </div>
             <a href="">Link3</a> 
+            
+             <!--Social Links-->
+            <div class='socialshare'>
+                <a href="">
+                    <div class='facebook'></div>
+                </a>
+                <a href="">
+                    <div class='twitter'></div>
+                </a>
+            </div>
+            
+            <div id='currentTime' class='currentTime'>
+            
+            
+            </div>
+            
+
         </div>
         
         <!-- Body Area -->
@@ -32,7 +76,12 @@
         </div>
             <!--Page Content Goes Here-->
         <div class='contentarea'>
-            <br>Cheese
+            <div class="textbox">
+                <p style='font-family:virtue'>    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh turpis, pellentesque tincidunt finibus vitae, dictum ac risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin commodo mi in est porttitor eleifend. Curabitur pretium lacus justo, vitae dapibus libero congue ut. Vivamus id viverra mauris. Donec dui arcu, dignissim vitae tempus ac, egestas ut est. Nam nunc orci, hendrerit non luctus sed, pulvinar id arcu. Vivamus vitae odio mollis, tincidunt odio ac, accumsan arcu. Quisque in arcu eu eros volutpat fermentum sed in lacus. Cras turpis lacus, consectetur at ultricies id, ultricies sed purus. Aliquam non velit magna. Proin dictum euismod viverra. Nam eget turpis felis. Fusce vel laoreet elit. Donec enim est, ullamcorper vitae lobortis sagittis, volutpat cursus lectus.
+                </p>
+            </div>
+            <br>
             <br><br><br><br><br>
         
         
@@ -42,8 +91,12 @@
         
         
             </div>
-            <h2>Test!</h2>
         </div>
     
+        
+    <div class='bottompanel'></div>
     </body>
+    <footer>
+    </footer>
+    
 </html>
