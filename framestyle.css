@@ -57,3 +57,18 @@ a {
 .largecontainer{
     width: 100%;
 }
+.tinytext {
+    font-family: 'Virtue';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5px;
+}
+.containergrey {
+    background-color: lightgrey;
+    width: 90%;
+    margin: auto;
+    border: solid grey;
+}
