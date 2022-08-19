@@ -1,90 +1,91 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="contentstyle.css">
-        
-        <script>
-            window.onload = function() {
-  clock();  
-    function clock() {
-    var now = new Date();
-    var TwentyFourHour = now.getHours();
-    var hour = now.getHours();
-    var min = now.getMinutes();
-    var mid = ' PM';
-    if (min < 10) {
-      min = "0" + min;
-    }
-    if (hour > 12) {
-      hour = hour - 12;
-    }    
-    if(hour==0){ 
-      hour=12;
-    }
-    if(TwentyFourHour < 12) {
-       mid = ' AM';
-    }     
-  document.getElementById('currentTime').innerHTML =     hour+':'+min +mid ;
-    setTimeout(clock, 1000);
-    }
-}
-        </script>
-    </head>
-    <body>
-        <!-- Title Bar Area -->
-        <div class= 'titlebar'>
-            <div class= 'logo'></div>
-            <div class= 'headerlinks'>
-                <a href="frame1.html" target="contentframe">Home</a>
-                <a href="https://hirealsuch.com" >AjaxIronside</a>
-                <a href="https://github.com/AjaxIronside/AjaxIronside.github.io/archive/1.0.zip">Download</a> 
-            </div>
-            <div></div>
-            <div class= 'dropdown'>
-                <button class ='dropdowntext'>DropdownMenu</button>
-                <div class="dropdowncontent">
-                    <a href="frame1.html" target="contentframe">Link!</a>
-                    <a href="frame2.html" target="contentframe">Link2!</a>
-                </div>
-            </div>
-            
-            
-             <!--Social Links-->
-            <div class='socialshare'>
-                <a href="">
-                    <div class='facebook'></div>
-                </a>
-                <a href="">
-                    <div class='twitter'></div>
-                </a>
-            </div>
-            <!--Local Time Clock-->
-            <div id='currentTime' class='currentTime'>
-            
-            
-            </div>
-            
+<head>
+    <link rel="stylesheet" type="text/css" href="contentstyle.css">
 
+    <script>
+        window.onload = function () {
+            clock();
+
+            function clock() {
+                var now = new Date();
+                var TwentyFourHour = now.getHours();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var mid = ' PM';
+                if (min < 10) {
+                    min = "0" + min;
+                }
+                if (hour > 12) {
+                    hour = hour - 12;
+                }
+                if (hour == 0) {
+                    hour = 12;
+                }
+                if (TwentyFourHour < 12) {
+                    mid = ' AM';
+                }
+                document.getElementById('currentTime').innerHTML = hour + ':' + min + mid;
+                setTimeout(clock, 1000);
+            }
+        }
+    </script>
+</head>
+<body>
+<!-- Title Bar Area -->
+<div class='titlebar'>
+    <div class='logo'></div>
+    <div class='headerlinks'>
+        <a href="frame1.html" target="contentframe">Home</a>
+        <a href="https://hirealsuch.com">AjaxIronside</a>
+        <a href="https://github.com/AjaxIronside/AjaxIronside.github.io/archive/1.0.zip">Download</a>
+    </div>
+    <div></div>
+    <div class='dropdown'>
+        <button class='dropdowntext'>DropdownMenu</button>
+        <div class="dropdowncontent">
+            <a href="frame1.html" target="contentframe">Link!</a>
+            <a href="frame2.html" target="contentframe">Link2!</a>
         </div>
-        
-        <!-- Body Area -->
-        <div class='container'>
-        <div class='divider'></div>
-        <div class='windowtitle'>
-            <!--Page Title-->
-            <div class="windowtitlename">
+    </div>
+
+
+    <!--Social Links-->
+    <div class='socialshare'>
+        <a href="">
+            <div class='facebook'></div>
+        </a>
+        <a href="">
+            <div class='twitter'></div>
+        </a>
+    </div>
+    <!--Local Time Clock-->
+    <div id='currentTime' class='currentTime'>
+
+
+    </div>
+
+
+</div>
+
+<!-- Body Area -->
+<div class='container'>
+    <div class='divider'></div>
+    <div class='windowtitle'>
+        <!--Page Title-->
+        <div class="windowtitlename">
             Main Window
-            </div>    
         </div>
-            <!--Page Content Goes Here-->
-        <div class='contentarea'>
-            <iframe src="frame1.html" name="contentframe" style="height:99%; width:99%" sandbox>
-                
-                </iframe>
-            </div>
-        </div>
-    
-        
-        <div class='bottompanel'></div>
-    </body>
-    
+    </div>
+    <!--Page Content Goes Here-->
+    <div class='contentarea'>
+        <iframe src="frame1.html" name="contentframe" style="height:99%; width:99%" sandbox>
+
+        </iframe>
+    </div>
+</div>
+
+
+<div class='bottompanel'></div>
+</body>
+
 </html>
